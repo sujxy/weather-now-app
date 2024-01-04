@@ -9,14 +9,22 @@
     }
 }
 
-@keyframes wobble {
+@keyframes elasticLevitate {
 
-    0%,
-    100% {
-        transform: translateY(-25%);
+    0% {
+        transform: translateY(-10px);
     }
 
     50% {
-        transform: translateY(0);
+        transform: translateY(0px);
     }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+.levitate {
+    animation: elasticLevitate 2s infinite cubic-bezier(.42, 0, .58, 1);
+    
 }

@@ -24,7 +24,7 @@ function App() {
           </div>
           <img
             src={"/landingGraphic.jpeg"}
-            className="w-[380px] h-[380px] mx-auto animate-bounce delay-75"
+            className="w-[380px] h-[380px] mx-auto levitate"
           />
         </div>
       ) : (
