@@ -9,7 +9,7 @@ export default function Navbar() {
 
   const handleSearch = async () => {
     const citiesPayload = cities.split(",");
-    const { data } = await axios.post("http://localhost:8080/getWeather", {
+    const { data } = await axios.post("/getWeather", {
       cities: citiesPayload,
     });
     if (data) {
