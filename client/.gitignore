@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+#ignore build folder during render deployment
+/build
+
+/coverage
