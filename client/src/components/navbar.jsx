@@ -14,9 +14,12 @@ export default function Navbar() {
     try {
       setLoading(true);
       const citiesPayload = cities.split(",");
-      const { data } = await axios.post("/api/getWeather", {
-        cities: citiesPayload,
-      });
+      const { data } = await axios.post(
+        "https://weather-now-app-sujxy.onrender.com/api/getWeather",
+        {
+          cities: citiesPayload,
+        }
+      );
       if (data) {
         setResults(data);
         setLoading(false);
