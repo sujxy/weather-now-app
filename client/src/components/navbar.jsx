@@ -14,7 +14,7 @@ export default function Navbar() {
     try {
       setLoading(true);
       const citiesPayload = cities.split(",");
-      const { data } = await axios.post("/getWeather", {
+      const { data } = await axios.post("/api/getWeather", {
         cities: citiesPayload,
       });
       if (data) {

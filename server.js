@@ -28,7 +28,7 @@ const getWeatherData = async (city) => {
   }
 };
 
-app.post("/getWeather", async (req, res) => {
+app.post("/api/getWeather", async (req, res) => {
   try {
     const { cities } = req.body;
     let weatherResults = {};
